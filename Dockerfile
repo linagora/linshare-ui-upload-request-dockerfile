@@ -23,3 +23,5 @@ rm -f ui-upload-request.tar.bz2
 
 COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
 COPY ./linshare-ui-upload-request.conf /usr/local/apache2/conf/extra/linshare-ui-upload-request.conf
+
+EXPOSE 443
