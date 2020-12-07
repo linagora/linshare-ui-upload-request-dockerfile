@@ -7,6 +7,7 @@ ARG CHANNEL="snapshots"
 
 ENV LINSHARE_VERSION=$VERSION
 ENV LS_SECURE_COOKIE=TRUE
+ENV BASE_URL=linshare
 
 RUN apt-get update && apt-get install wget bzip2 -y && apt-get clean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
